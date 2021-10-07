@@ -34,4 +34,4 @@
 https://www.figma.com/file/EtErm8z71MsdcgZHNsUHEF/%E3%83%9D%E3%83%BC%E3%83%88%E3%83%95%E3%82%A9%E3%83%AA%E3%82%AA%E9%81%B7%E7%A7%BB%E5%9B%B3?node-id=0%3A1
 
 ## ER図
-https://gyazo.com/4a686e6f881c1348d1756b1be0bb386f
+https://gyazo.com/cf9894a177be763d366d59a429f41b14
