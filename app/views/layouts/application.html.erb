@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>TodaysNetflixRecommend</title>
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
-
-    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ABCD DEMO</title>
+    <%= stylesheet_link_tag    "application", media: "all" %>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,700,900&display=swap" rel="stylesheet">
   </head>
 
   <body>
-    <%= yield %>
+    <header>
+      <%= image_tag 'Group 2.png', class: "logo" %>
+    </header>
+    <div class="wrapper1">
+      <%= yield %>
+    </div>
   </body>
 </html>
