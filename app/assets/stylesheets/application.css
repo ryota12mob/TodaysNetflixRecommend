@@ -55,3 +55,31 @@ header {
     right: 100px;
 }
 
+.q_num {
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+.answer_zone {
+    margin-top: 35px;
+    margin-bottom: 40px;
+}
+
+.radio-btn {
+    display: none;
+}
+
+.yes {
+
+    background: url("Group 5.png");
+
+}
+
+.no {
+    display: none;
+
+}
+
+.or {
+    margin: 0 20px;
+}
