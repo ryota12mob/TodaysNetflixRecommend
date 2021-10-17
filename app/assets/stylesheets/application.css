@@ -66,19 +66,9 @@ header {
 }
 
 .radio-btn {
-    display: none;
+    /*display: none;*/
 }
 
-.yes {
-
-    background: url("Group 5.png");
-
-}
-
-.no {
-    display: none;
-
-}
 
 .or {
     margin: 0 20px;
