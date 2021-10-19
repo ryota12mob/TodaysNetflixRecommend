@@ -66,10 +66,14 @@ header {
 }
 
 .radio-btn {
-    /*display: none;*/
+    display: none;
 }
 
 
 .or {
     margin: 0 20px;
+}
+
+.invisible {
+    display: none;
 }
