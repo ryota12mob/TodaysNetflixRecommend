@@ -1,7 +1,7 @@
 <%= form_with url: get_movie_path, method: :post do |form| %>
     <div id="question1">
         <%= image_tag '質問１.png', class: "q_num" %>
-        <%= image_tag 'Group 11.png', class: "q_image" %>
+        <%= image_tag 'family.png', class: "q_image" %>
         <div class="answer_zone">
             <%= form.radio_button :answer1, "Yes", class: "radio-btn"  %>
             <%= form.label :answer1, image_tag("Group 5.png"), value: "Yes", class: "yes-label question1"  %>
@@ -14,7 +14,7 @@
 
     <div id="question2", class="invisible">
         <%= image_tag '質問2.png', class: "q_num" %>
-        <%= image_tag 'Group 12.png', class: "q_image" %>
+        <%= image_tag 'musical.png', class: "q_image" %>
         <div class="answer_zone">
             <%= form.radio_button :answer2, "Yes", class: "radio-btn"  %>
             <%= form.label :answer2, image_tag("Group 5.png"), value: "Yes", class: "yes-label question2"  %>
@@ -26,8 +26,8 @@
     </div>
 
     <div id="question3", class="invisible">
-        <%= image_tag '質問１.png', class: "q_num" %>
-        <%= image_tag 'Group 11.png', class: "q_image" %>
+        <%= image_tag '質問3.png', class: "q_num" %>
+        <%= image_tag 'recent_movie.png', class: "q_image" %>
         <div class="answer_zone">
             <%= form.radio_button :answer3, "Yes", class: "radio-btn"  %>
             <%= form.label :answer3, image_tag("Group 5.png"), value: "Yes", class: "yes-label question3"  %>
@@ -39,8 +39,8 @@
     </div>
 
     <div id="question4", class="invisible">
-        <%= image_tag '質問１.png', class: "q_num" %>
-        <%= image_tag 'Group 11.png', class: "q_image" %>
+        <%= image_tag '質問4.png', class: "q_num" %>
+        <%= image_tag 'old_movie.png', class: "q_image" %>
         <div class="answer_zone">
             <%= form.radio_button :answer4, "Yes", class: "radio-btn"  %>
             <%= form.label :answer4, image_tag("Group 5.png"), value: "Yes", class: "yes-label question4"  %>
@@ -52,8 +52,8 @@
     </div>
 
     <div id="question5", class="invisible">
-        <%= image_tag '質問１.png', class: "q_num" %>
-        <%= image_tag 'Group 11.png', class: "q_image" %>
+        <%= image_tag '質問5.png', class: "q_num" %>
+        <%= image_tag 'cry.png', class: "q_image" %>
         <div class="answer_zone">
             <%= form.radio_button :answer5, "Yes", class: "radio-btn"  %>
             <%= form.label :answer5, image_tag("Group 5.png"), value: "Yes", class: "yes-label question5"  %>
@@ -65,8 +65,8 @@
     </div>
 
     <div id="question6", class="invisible">
-        <%= image_tag '質問１.png', class: "q_num" %>
-        <%= image_tag 'Group 11.png', class: "q_image" %>
+        <%= image_tag '質問6.png', class: "q_num" %>
+        <%= image_tag 'love.png', class: "q_image" %>
         <div class="answer_zone">
             <%= form.radio_button :answer6, "Yes", class: "radio-btn"  %>
             <%= form.label :answer6, image_tag("Group 5.png"), value: "Yes", class: "yes-label question6"  %>
@@ -78,8 +78,8 @@
     </div>
 
     <div id="question7", class="invisible">
-        <%= image_tag '質問１.png', class: "q_num" %>
-        <%= image_tag 'Group 11.png', class: "q_image" %>
+        <%= image_tag '質問7.png', class: "q_num" %>
+        <%= image_tag 'horror.png', class: "q_image" %>
         <div class="answer_zone">
             <%= form.radio_button :answer7, "Yes", class: "radio-btn"  %>
             <%= form.label :answer1, image_tag("Group 5.png"), value: "Yes", class: "yes-label question7"  %>
@@ -91,8 +91,8 @@
     </div>
 
     <div id="question8", class="invisible">
-        <%= image_tag '質問１.png', class: "q_num" %>
-        <%= image_tag 'Group 11.png', class: "q_image" %>
+        <%= image_tag '質問8.png', class: "q_num" %>
+        <%= image_tag 'teen.png', class: "q_image" %>
         <div class="answer_zone">
             <%= form.radio_button :answer8, "Yes", class: "radio-btn"  %>
             <%= form.label :answer8, image_tag("Group 5.png"), value: "Yes", class: "yes-label question8"  %>
@@ -104,8 +104,8 @@
     </div>
 
     <div id="question9", class="invisible">
-        <%= image_tag '質問１.png', class: "q_num" %>
-        <%= image_tag 'Group 11.png', class: "q_image" %>
+        <%= image_tag '質問9.png', class: "q_num" %>
+        <%= image_tag 'adventure.png', class: "q_image" %>
         <div class="answer_zone">
             <%= form.radio_button :answer9, "Yes", class: "radio-btn"  %>
             <%= form.label :answer9, image_tag("Group 5.png"), value: "Yes", class: "yes-label quesiton9"  %>
@@ -116,7 +116,10 @@
         <%= image_tag 'guide_q.png' %>
     </div>
 
-    <%= form.submit "結果を確認する", class: "submit-btn invisible"%>
-
+    <div class="submit invisible">
+        <%= image_tag '終了！！.png', class: "q_num"%>
+        <%= image_tag 'result.png', class: 'q_image' %>
+        <%= form.submit "PUSH!", class: "submit-btn btn-border"%>
+    </div>
 <% end %>
 <%= javascript_pack_tag 'questions' %>

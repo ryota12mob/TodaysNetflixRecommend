@@ -36,7 +36,7 @@ document.addEventListener('turbolinks:load', () => {
     })
     $('.question9').on('click', function() {
         $('#question9').addClass('invisible');
-        $('.submit-btn').removeClass('invisible');
+        $('.submit').removeClass('invisible');
     })
 
 })
