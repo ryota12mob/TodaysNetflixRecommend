@@ -10,9 +10,7 @@ class QuestionsController < ApplicationController
         end
 
         if params[:answer2] == "Yes"
-            @language = "japanese"
-        else
-            @language = "english"
+            @genrelist += "13335"
         end
 
         if params[:answer3] == "Yes"
@@ -70,7 +68,7 @@ class QuestionsController < ApplicationController
         end
 
 
-        url = URI("https://unogsng.p.rapidapi.com/search?genrelist=#{@genrelist}&type=movie#{@start_year}&orderby=rating&audiosubtitle_andor=and&start_rating=0&limit=1000&subtitle=#{@language}&countrylist=267&audio=#{@language}&offset=0#{@end_year}")
+        url = URI("https://unogsng.p.rapidapi.com/search?genrelist=#{@genrelist}&type=movie#{@start_year}&orderby=rating&audiosubtitle_andor=and&start_rating=0&limit=1000&countrylist=267&audio=#{@language}&offset=0#{@end_year}")
 
         http = Net::HTTP.new(url.host, url.port)
         http.use_ssl = true

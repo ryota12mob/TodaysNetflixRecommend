@@ -1,6 +1,3 @@
-
-<h1 id="hello">Hello World</h1>
-<%= javascript_pack_tag 'questions' %>
 <%= form_with url: get_movie_path, method: :post do |form| %>
     <div id="question1">
         <%= image_tag '質問１.png', class: "q_num" %>
@@ -119,6 +116,7 @@
         <%= image_tag 'guide_q.png' %>
     </div>
 
-    <%= form.submit "結果を確認する", class: "submit-btn"%>
+    <%= form.submit "結果を確認する", class: "submit-btn invisible"%>
 
 <% end %>
+<%= javascript_pack_tag 'questions' %>
