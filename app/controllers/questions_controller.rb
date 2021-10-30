@@ -79,8 +79,22 @@ class QuestionsController < ApplicationController
     response = http.request(request)
     @results = JSON.parse(response.body)
 
+    if @results['results'].blank?
+      url = URI("https://unogsng.p.rapidapi.com/search?type=movie&start_year=1972&orderby=rating&audiosubtitle_andor=and&limit=100&subtitle=english&countrylist=267&audio=english&country_andorunique=unique&offset=0&end_year=2019")
 
+      http = Net::HTTP.new(url.host, url.port)
+      http.use_ssl = true
+      http.verify_mode = OpenSSL::SSL::VERIFY_NONE
+
+      request = Net::HTTP::Get.new(url)
+      request['x-rapidapi-key'] = 'd7e9751546msh2daf837e0e220b7p11008bjsn3db46f5d0ef5'
+      request['x-rapidapi-host'] = 'unogsng.p.rapidapi.com'
+      response = http.request(request)
+      @results = JSON.parse(response.body)
       @result = @results['results'].sample
+    else
+      @result = @results['results'].sample
+    end
 
 
     @title = @result['title']
