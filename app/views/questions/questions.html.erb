@@ -1,0 +1,125 @@
+<%= form_with url: get_movie_path, method: :post do |form| %>
+    <div id="question1">
+        <%= image_tag '質問１.png', class: "q_num" %>
+        <%= image_tag 'family.png', class: "q_image" %>
+        <div class="answer_zone">
+            <%= form.radio_button :answer1, "Yes", class: "radio-btn"  %>
+            <%= form.label :answer1, image_tag("Group 5.png"), value: "Yes", class: "yes-label question1"  %>
+            <%= image_tag 'or.png', class: "or" %>
+            <%= form.radio_button :answer1, "No", class:"radio-btn" %>
+            <%= form.label :answer1, image_tag("Group 6.png"), value: "No", class: "no-label question1"  %>
+        </div>
+        <%= image_tag 'guide_q.png' %>
+    </div>
+
+    <div id="question2", class="invisible">
+        <%= image_tag '質問2.png', class: "q_num" %>
+        <%= image_tag 'musical.png', class: "q_image" %>
+        <div class="answer_zone">
+            <%= form.radio_button :answer2, "Yes", class: "radio-btn"  %>
+            <%= form.label :answer2, image_tag("Group 5.png"), value: "Yes", class: "yes-label question2"  %>
+            <%= image_tag 'or.png', class: "or" %>
+            <%= form.radio_button :answer2, "No", class:"radio-btn" %>
+            <%= form.label :answer2, image_tag("Group 6.png"), value: "No", class: "no-label question2"  %>
+        </div>
+        <%= image_tag 'guide_q.png' %>
+    </div>
+
+    <div id="question3", class="invisible">
+        <%= image_tag '質問3.png', class: "q_num" %>
+        <%= image_tag 'recent_movie.png', class: "q_image" %>
+        <div class="answer_zone">
+            <%= form.radio_button :answer3, "Yes", class: "radio-btn"  %>
+            <%= form.label :answer3, image_tag("Group 5.png"), value: "Yes", class: "yes-label question3"  %>
+            <%= image_tag 'or.png', class: "or" %>
+            <%= form.radio_button :answer3, "No", class:"radio-btn" %>
+            <%= form.label :answer3, image_tag("Group 6.png"), value: "No", class: "no-label question3"  %>
+        </div>
+        <%= image_tag 'guide_q.png' %>
+    </div>
+
+    <div id="question4", class="invisible">
+        <%= image_tag '質問4.png', class: "q_num" %>
+        <%= image_tag 'old_movie.png', class: "q_image" %>
+        <div class="answer_zone">
+            <%= form.radio_button :answer4, "Yes", class: "radio-btn"  %>
+            <%= form.label :answer4, image_tag("Group 5.png"), value: "Yes", class: "yes-label question4"  %>
+            <%= image_tag 'or.png', class: "or" %>
+            <%= form.radio_button :answer4, "No", class:"radio-btn" %>
+            <%= form.label :answer4, image_tag("Group 6.png"), value: "No", class: "no-label question4"  %>
+        </div>
+        <%= image_tag 'guide_q.png' %>
+    </div>
+
+    <div id="question5", class="invisible">
+        <%= image_tag '質問5.png', class: "q_num" %>
+        <%= image_tag 'cry.png', class: "q_image" %>
+        <div class="answer_zone">
+            <%= form.radio_button :answer5, "Yes", class: "radio-btn"  %>
+            <%= form.label :answer5, image_tag("Group 5.png"), value: "Yes", class: "yes-label question5"  %>
+            <%= image_tag 'or.png', class: "or" %>
+            <%= form.radio_button :answer5, "No", class:"radio-btn" %>
+            <%= form.label :answer5, image_tag("Group 6.png"), value: "No", class: "no-label question5"  %>
+        </div>
+        <%= image_tag 'guide_q.png' %>
+    </div>
+
+    <div id="question6", class="invisible">
+        <%= image_tag '質問6.png', class: "q_num" %>
+        <%= image_tag 'love.png', class: "q_image" %>
+        <div class="answer_zone">
+            <%= form.radio_button :answer6, "Yes", class: "radio-btn"  %>
+            <%= form.label :answer6, image_tag("Group 5.png"), value: "Yes", class: "yes-label question6"  %>
+            <%= image_tag 'or.png', class: "or" %>
+            <%= form.radio_button :answer6, "No", class:"radio-btn" %>
+            <%= form.label :answer6, image_tag("Group 6.png"), value: "No", class: "no-label question6"  %>
+        </div>
+        <%= image_tag 'guide_q.png' %>
+    </div>
+
+    <div id="question7", class="invisible">
+        <%= image_tag '質問7.png', class: "q_num" %>
+        <%= image_tag 'horror.png', class: "q_image" %>
+        <div class="answer_zone">
+            <%= form.radio_button :answer7, "Yes", class: "radio-btn"  %>
+            <%= form.label :answer7, image_tag("Group 5.png"), value: "Yes", class: "yes-label question7"  %>
+            <%= image_tag 'or.png', class: "or" %>
+            <%= form.radio_button :answer7, "No", class:"radio-btn" %>
+            <%= form.label :answer7, image_tag("Group 6.png"), value: "No", class: "no-label question7"  %>
+        </div>
+        <%= image_tag 'guide_q.png' %>
+    </div>
+
+    <div id="question8", class="invisible">
+        <%= image_tag '質問8.png', class: "q_num" %>
+        <%= image_tag 'teen.png', class: "q_image" %>
+        <div class="answer_zone">
+            <%= form.radio_button :answer8, "Yes", class: "radio-btn"  %>
+            <%= form.label :answer8, image_tag("Group 5.png"), value: "Yes", class: "yes-label question8"  %>
+            <%= image_tag 'or.png', class: "or" %>
+            <%= form.radio_button :answer8, "No", class:"radio-btn" %>
+            <%= form.label :answer8, image_tag("Group 6.png"), value: "No", class: "no-label question8"  %>
+        </div>
+        <%= image_tag 'guide_q.png' %>
+    </div>
+
+    <div id="question9", class="invisible">
+        <%= image_tag '質問9.png', class: "q_num" %>
+        <%= image_tag 'adventure.png', class: "q_image" %>
+        <div class="answer_zone">
+            <%= form.radio_button :answer9, "Yes", class: "radio-btn"  %>
+            <%= form.label :answer9, image_tag("Group 5.png"), value: "Yes", class: "yes-label question9"  %>
+            <%= image_tag 'or.png', class: "or" %>
+            <%= form.radio_button :answer9, "No", class:"radio-btn" %>
+            <%= form.label :answer9, image_tag("Group 6.png"), value: "No", class: "no-label question9"  %>
+        </div>
+        <%= image_tag 'guide_q.png' %>
+    </div>
+
+    <div class="submit invisible">
+        <%= image_tag '終了！！.png', class: "q_num"%>
+        <%= image_tag 'result.png', class: 'q_image' %>
+        <%= form.submit "PUSH!", class: "submit-btn btn-border"%>
+    </div>
+<% end %>
+<%= javascript_pack_tag 'questions' %>

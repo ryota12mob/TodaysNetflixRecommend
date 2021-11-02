@@ -13,3 +13,127 @@
  *= require_tree .
  *= require_self
  */
+body {
+    background-color: rgba(232, 59, 43, 1);
+    border: 10px solid #00a1ab;
+    margin: 0 auto;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 5px;
+    width: 346px;
+    height: 750px;
+}
+
+header {
+    margin-bottom: 100px;
+    position: relative;
+
+}
+
+.logo {
+    position: absolute;
+    left: 75px;
+}
+
+.wrapper1 {
+    background-color: #FFFAD4;
+    border-radius: 15px;
+    text-align: center;
+    height: 580px;
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.top-image {
+    background-image: url('Group 10 (2).png') ;
+    width: 302px;
+    height: 536px;
+    position: relative;
+}
+
+.start-btn {
+    position: absolute;
+    top: 475px;
+    left: 50px;
+}
+
+.q_num {
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+.answer_zone {
+    margin-top: 35px;
+    margin-bottom: 40px;
+}
+
+.radio-btn {
+    display: none;
+}
+
+
+.or {
+    margin: 0 20px;
+}
+
+.invisible {
+    display: none;
+}
+
+.submit-btn {
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 1em 2em;
+    width: 300px;
+    color: #333;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: #cccccc;
+    box-shadow: 0 5px 0 #aaaaaa;
+    transition: 0.3s;
+    margin-top: 70px;
+}
+
+.submit-btn::after {
+    content: '';
+    width: 5px;
+    height: 5px;
+    border-top: 3px solid #333333;
+    border-right: 3px solid #333333;
+    transform: rotate(45deg);
+}
+
+.submit-btn:hover {
+    transform: translateY(3px);
+    text-decoration: none;
+    box-shadow: 0 2px 0 #aaaaaa;
+}
+
+.result_img {
+    position: absolute;
+    right: 69px;
+    top: 189px;
+
+}
+
+.result_title {
+    font-weight: bold;
+    color: #333333;
+}
+
+.tweet_btn {
+    position: absolute;
+    right: -5px;
+}
+
+.restart_btn {
+    position: absolute;
+    left: -3px;
+}
+
+.result_container {
+    width: 318;
+    height: 600px;
+    position: relative;
+}

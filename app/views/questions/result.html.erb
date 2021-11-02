@@ -1,0 +1,8 @@
+<div class="result_container">
+    <%= image_tag 'result_h.png', class: "q_num" %>
+    <%= image_tag 'yellow_box.png', class: "q_image" %>
+    <%= image_tag  @movie.image, class: "result_img" %>
+    <p class="result_title"><%= @movie.title %></p>
+    <%= link_to image_tag('restart.png'), questions_path, class: "restart_btn"  %>
+    <%= link_to image_tag('tweet.png'), "https://twitter.com/share?url=#{root_path}/&text=今日見る映画は#{@movie.title}に決まりました！/&hashtags=映画,Netflix,おうち時間", class: "tweet_btn" %>
+</div>
