@@ -13,6 +13,10 @@
  *= require_tree .
  *= require_self
  */
+@import 'bootstrap';
+@import 'font-awesome-sprockets';
+@import 'font-awesome';
+
 body {
     background-color: rgba(232, 59, 43, 1);
     border: 10px solid #00a1ab;
@@ -86,13 +90,14 @@ header {
     margin: 0 auto;
     padding: 1em 2em;
     width: 300px;
-    color: #333;
+    color: #fff;
     font-size: 18px;
     font-weight: 700;
-    background-color: #cccccc;
-    box-shadow: 0 5px 0 #aaaaaa;
+    background-color: #CC0000	;
+    box-shadow: 0 5px 0 #333	;
     transition: 0.3s;
     margin-top: 70px;
+    border: 6px outset #b9000e;
 }
 
 .submit-btn::after {
@@ -119,7 +124,8 @@ header {
 
 .result_title {
     font-weight: bold;
-    color: #333333;
+    color: #333;
+    font-size: 18px;
 }
 
 .tweet_btn {

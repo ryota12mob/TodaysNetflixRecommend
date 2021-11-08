@@ -9,7 +9,7 @@ class QuestionsController < ApplicationController
       if @genrelist.blank?
         @genrelist = '13335'
       else
-        @genrelist ='%2C13335'
+        @genrelist +='%2C13335'
       end
     end
     if params[:answer3] == 'Yes'
@@ -96,8 +96,12 @@ class QuestionsController < ApplicationController
       @result = @results['results'].sample
     end
 
+    if @result['title'].include?("")
+      @title = @result['title'].tr("", "%20")
+    else
+      @title = @result['title']
+    end
 
-    @title = @result['title']
     @img = @result['img']
     @movie = Movie.new(title: @title, image: @img)
 
