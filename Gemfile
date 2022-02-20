@@ -42,6 +42,7 @@ group :development, :test do
   gem 'rubocop-rails', require: false
   gem 'capybara'
   gem 'database_cleaner'
+  gem 'sorcery'
 end
 
 group :development do

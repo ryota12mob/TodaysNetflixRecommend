@@ -109,7 +109,8 @@ class QuestionsController < ApplicationController
   end
 
   def result
-    @movie = Movie.last
-    @title = @movie.title
+    @result_movie = Movie.last
+    @result_title = @result_movie.title
+    @result_image = @result_movie.image
   end
 end
