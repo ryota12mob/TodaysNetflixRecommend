@@ -54,8 +54,14 @@ header {
 
 .start-btn {
     position: absolute;
-    top: 475px;
+    top: 445px;
     left: 50px;
+}
+
+.to_login_btn {
+    position: absolute;
+    top: 495px;
+    left: 60px;
 }
 
 .q_num {
